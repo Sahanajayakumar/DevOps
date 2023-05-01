@@ -1,0 +1,39 @@
+1.)Git Branching
+
+Use a branch to isolate development work without affecting other branches in the repository. Each repository has one default branch and can have multiple other branches. You can merge a branch into another branch using a pull request.
+
+Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository.
+
+2.)Git Revert and Reset
+
+Two commonly used tools that git users will encounter are git reset and git revert. The benefit of both of these commands is that you can use them to remove or edit changes you’ve made in the code in previous commits.
+
+3.)Git Rebase and Merge
+
+What Is Git Rebase?
+
+Git rebase is a command that lets users integrate changes from one branch to another, and the logs are modified once the action is complete. Git rebase was developed to overcome merging’s shortcomings, specifically regarding logs.
+
+What Is Git Merge?
+
+Git merge is a command that allows developers to merge Git branches while the logs of commits on branches remain intact.
+
+The merge wording can be confusing because we have two methods of merging branches, and one of those ways is actually called “merge,” even though both procedures do essentially the same thing.
+
+4.)Git Stash:
+
+Git stash is a command that allows you to temporarily save changes you have made in your working directory, without committing them. This is useful when you need to switch to a different branch to work on something else, but you don’t want to commit the changes you’ve made in your current branch yet.
+
+To use Git stash, you first create a new branch and make some changes to it. Then you can use the command git stash to save those changes. This will remove the changes from your working directory and record them in a new stash. You can apply these changes later. git stash list command shows the list of stashed changes.
+
+You can also use git stash drop to delete a stash and git stash clear to delete all the stashes.
+
+Cherry-pick:
+
+7.)Git cherry-pick is a command that allows you to select specific commits from one branch and apply them to another. This can be useful when you want to selectively apply changes that were made in one branch to another.
+
+To use git cherry-pick, you first create two new branches and make some commits to them. Then you use the git cherry-pick <commit_hash> command to select the specific commits from one branch and apply them to the other.
+
+6.)Resolving Conflicts:
+
+Conflicts can occur when you merge or rebase branches that have diverged, and you need to manually resolve the conflicts before git can proceed with the merge/rebase. git status command shows the files that have conflicts, the git diff command shows the difference between the conflicting versions and the git add command is used to add the resolved files.
