@@ -1,0 +1,40 @@
+1.)What is the difference Between Main Branch and Master Branch?
+
+main or master is default branch when you create a repository. GitHub uses main as its default branch while others systems still use master.
+
+2.)Can you explain the difference between Git and GitHub?
+
+Git: Git is a version control system that allows developers to manage changes to their code. GIT will allow installing it on your local system.
+
+GitHub: GitHub is a platform that provides hosting for Git repositories. With GitHub, developers can store their code remotely and collaborate with others on the same codebase. Additionally, GitHub provides a web-based interface for viewing and managing code, as well as several additional features such as issue tracking, pull requests, and wikis.
+
+3.)What is the difference between local & remote repositories? How to connect local to remote?
+
+The local repository is a Git repository that is stored on your computer. Local repositories reside on the computers of team members.
+
+The remote repository is a Git repository that is stored on some remote computer. In contrast, remote repositories are hosted on a server that is accessible for all team members - most likely on the internet.
+
+------------ COMMANDS ----------
+
+1.)Set your user name and email address, which will be associated with your commits.
+
+To set your user name and email address, which will be associated with your commits in Git, you can use the following command:
+
+git config — global user.name “<name>”
+
+git config — global user.name “<email id>”
+
+To check the details :
+
+git config — global user.name
+
+git config — global user.name
+
+2.)Create a repository named “Devops” on GitHub
+
+3.)Connect your local repository to the repository on GitHub.
+git int
+git add .
+git commit -m "message"
+git remote add origin <remote repository URL>
+
